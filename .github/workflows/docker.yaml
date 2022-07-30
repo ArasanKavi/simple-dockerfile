@@ -15,7 +15,7 @@ jobs:
         docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
     - name: docker build hello
       run: |
-        docker build -t demo .
+        docker build -t arasankavi/testrepokavi:demo .
     - name: docker push
       run: |
         docker push arasankavi/testrepokavi:demo
